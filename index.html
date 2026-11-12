@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | [EVANS POGHISHO]</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="logo">MY<span class="highlight">Portfolio</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><button id="theme-toggle">🌓</button></li>
+        </ul>
+    </nav>
+
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Hi, I'm <span class="highlight">Evans</span></h1>
+            <h2 class="subtitle">Computer Science Student and Tech Enthusiast</h2>
+            <p>Turning complex society problems into elegant, functional digital solutions is my aspirations.</p>
+            <p>I have been able to work on the projects below and am open to working with you and make new friendship</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View Work</a>
+                <a href="#contact" class="btn-secondary">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>My journey in tech started 2024 when i was placed in Kaimosi Friends University to take bachelors of science in computer science. Then, I was curious of computers could be used to solve society problems and automating repetitive tasks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Technical Toolbox</h2>
+            <div id="skills-cloud" class="skills-cloud">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+            <!-- Injected by JS -->
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="bg-alt">
+        <div class="container text-center">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="resume-box">
+                <p>Looking for a detailed history of my professional background?</p>
+                <!-- Ensure you have a file named resume.pdf in your folder -->
+                <a href="resume.pdf" target="_blank" class="btn-primary">
+                    <i class="fas fa-file-pdf"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/[youruser]" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/[youruser]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. Built from scratch.</p>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <div id="modal-tech" class="tech-stack"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
