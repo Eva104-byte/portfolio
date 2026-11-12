@@ -38,6 +38,7 @@ nav {
     align-items: center;
     padding: 0 10%;
     height: 70px;
+    width: 100%;
     background: var(--nav);
     backdrop-filter: blur(10px);
     position: sticky;
